@@ -1,7 +1,7 @@
 # kubernetes-k8s-minikube
 
-- [¿Qué es minikube?](#que-es-minikube)
-- [Como Instalar Minikube](#como-instalar-minikube)
+- [¿Qué es minikube?](#qué-es-minikube)
+- [¿Cómo Instalar Minikube?](#cómo-instalar-minikube)
 - [Empezando con Minikube](#empezando-con-minikube)
 - [Comandos iniciales Kubernetes](#comandos-kubernetes)
 - [Listado Comandos Kubernetes](#listado-comandos-kubernetes)
@@ -12,7 +12,7 @@
 
 Minikube es un entorno de kubernetes con un sólo master y un sólo worker en la misma máquina. Para realizar pruebas de laboratorio va genial.
 
-# Como Instalar Minikube
+# ¿Cómo Instalar Minikube?
 
 ### Antes de empezar 
 
