@@ -8,7 +8,7 @@
 
 ***
 
-# Que es Minikube
+# ¿Qué es Minikube?
 
 Minikube es un entorno de kubernetes con un sólo master y un sólo worker en la misma máquina. Para realizar pruebas de laboratorio va genial.
 
