@@ -1,6 +1,6 @@
 # kubernetes-k8s-minikube
 
-- [Que es minikube](#que-es-minikube)
+- [¿Qué es minikube?](#que-es-minikube)
 - [Como Instalar Minikube](#como-instalar-minikube)
 - [Empezando con Minikube](#empezando-con-minikube)
 - [Comandos iniciales Kubernetes](#comandos-kubernetes)
@@ -29,7 +29,7 @@ Y es necesario tener Hypervisor p.e. VirtualBox.
 
 # Empezando con minikube
 
-Si habías instalado previamente minikube, yejecutas:
+Si habías instalado previamente minikube, y ejecutas:
 > minikube start
 
 Y dicho comando devuelve un error:
