@@ -3,7 +3,8 @@
 - [Que es minikube](#que-es-minikube)
 - [Como Instalar Minikube](#como-instalar-minikube)
 - [Empezando con Minikube](#empezando-con-minikube)
-- [Comandos Kubernetes](#comandos-kubernetes)
+- [Comandos iniciales Kubernetes](#comandos-kubernetes)
+- [Listado Comandos Kubernetes](#listado-comandos-kubernetes)
 
 ***
 
@@ -23,7 +24,7 @@ Y es necesario tener Hypervisor p.e. VirtualBox.
 
 ## Instalando Minikube en Ubuntu
 
-> curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && chmod +x minikube
+> curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && chmod +x minikube \
 > sudo cp minikube /usr/local/bin && rm minikube
 
 # Empezando con minikube
@@ -41,8 +42,8 @@ Para verificar el estado de Minikube:
 > minikube status
 
 Para eliminar el cluster Minikube y arrancarlo en modo debug:
-> minikube delete
-> minikube start --v=7 --alsologtostderr
+> minikube delete \
+> minikube start --v=7 --alsologtostderr \
 > minikube status
 
 # Comandos kubernetes
@@ -54,8 +55,8 @@ Versión del kubectl:
 > kubectl version
 
 Obtener estado de los nodos:
-> kubectl get nodes
-> NAME       STATUS   ROLES    AGE     VERSION
+> kubectl get nodes \
+> NAME       STATUS   ROLES    AGE     VERSION \
 > minikube   Ready    master   2m51s   v1.19.4
 
 Obtener listado de los services:
@@ -64,36 +65,38 @@ Obtener listado de los services:
 Obtener listado de los pods:
 > kubectl get pods -A -owide
 
+# Listado Comandos kubernetes
+
 **kubectl commands:**
-> kubectl get nodes
-> kubectl get pod
-> kubectl get services
-> kubectl create deployment nginx-depl --image=nginx
-> kubectl get deployment
-> kubectl get replicaset
-> kubectl edit deployment nginx-depl
+> kubectl get nodes \
+> kubectl get pod \
+> kubectl get services \
+> kubectl create deployment nginx-depl --image=nginx \
+> kubectl get deployment \
+> kubectl get replicaset \
+> kubectl edit deployment nginx-depl 
 
 **debugging:**
-> kubectl logs {pod-name}
+> kubectl logs {pod-name} \
 > kubectl exec -it {pod-name} -- bin/bash
 
 **create mongo deployment:**
-> kubectl create deployment mongo-depl --image=mongo
-> kubectl logs mongo-depl-{pod-name}
+> kubectl create deployment mongo-depl --image=mongo \
+> kubectl logs mongo-depl-{pod-name} \
 > kubectl describe pod mongo-depl-{pod-name}
 
 **delete deployment:**
-> kubectl delete deployment mongo-depl
+> kubectl delete deployment mongo-depl \
 > kubectl delete deployment nginx-depl
 
 **create or edit config file:**
-> vim nginx-deployment.yaml
-> kubectl apply -f nginx-deployment.yaml
-> kubectl get pod
-> kubectl get deployment
+> vim nginx-deployment.yaml \
+> kubectl apply -f nginx-deployment.yaml \
+> kubectl get pod \
+> kubectl get deployment \
 
 **delete with config:**
-> kubectl delete -f nginx-deployment.yaml
+> kubectl delete -f nginx-deployment.yaml \
 
 **Metrics:** The kubectl top command returns current CPU and memory usage for a cluster’s pods or nodes, or for a particular pod or node if specified.
 > kubectl top 
