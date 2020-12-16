@@ -79,6 +79,7 @@ Obtener listado de los pods:
 # Listado Comandos kubernetes
 
 **kubectl commands:**
+
     kubectl get nodes
     kubectl get pod
     kubectl get services
@@ -88,28 +89,34 @@ Obtener listado de los pods:
     kubectl edit deployment nginx-depl 
 
 **debugging:**
+
     kubectl logs {pod-name}
     kubectl exec -it {pod-name} -- bin/bash
 
 **create mongo deployment:**
+
     kubectl create deployment mongo-depl --image=mongo
     kubectl logs mongo-depl-{pod-name}
     kubectl describe pod mongo-depl-{pod-name}
 
 **delete deployment:**
+
     kubectl delete deployment mongo-depl
     kubectl delete deployment nginx-depl
 
 **create or edit config file:**
+
     vim nginx-deployment.yaml
     kubectl apply -f nginx-deployment.yaml
     kubectl get pod
     kubectl get deployment
 
 **delete with config:**
+
     kubectl delete -f nginx-deployment.yaml
 
 **Metrics:** The kubectl top command returns current CPU and memory usage for a cluster’s pods or nodes, or for a particular pod or node if specified.
+
     kubectl top 
 
 ***
