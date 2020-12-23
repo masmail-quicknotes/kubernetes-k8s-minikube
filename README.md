@@ -129,7 +129,7 @@ Obtener listado de los pods:
 
 ***
 
-# URL referencia 
+# URLs referencia 
 
 - <https://kubernetes.io/es/docs/tasks/tools/install-minikube/>
 - <https://www.youtube.com/watch?v=X48VuDVv0do&list=WL&index=8>
